@@ -10,19 +10,24 @@ import { PrivadoComponent } from './components/privado/privado.component';
 import { NavegacionComponent } from './components/navegacion/navegacion.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NoEncontradoComponent } from './components/no-encontrado/no-encontrado.component';
+
 
 
 export const routes: Routes = [
-{path: "inicio" , component: InicioComponent },
-{path: "productos" , component: ProductosComponent },
-{path: "servicios" , component: ServiciosComponent },
-{path: "nosotros" , component: NosotrosComponent },
-{path: "contacto" , component: ContactoComponent },
-{path: "registrarse" , component: RegistrarseComponent },
-{path: "iniciarSesion" , component: IniciarSesionComponent },
-{path: "privado" , component: PrivadoComponent },
-{path: "navegacion" , component: NavegacionComponent },
-{path: "header" , component: HeaderComponent },
-{path: "footer" , component: FooterComponent }
+{path: "inicio" , component: InicioComponent, title: "Inicio"},
+{path: "" , redirectTo: "inicio", pathMatch: "full", title: "Inicio"},
+{path: "productos" , component: ProductosComponent, title: "Productos"},
+{path: "servicios" , component: ServiciosComponent, title: "Servicios"},
+{path: "nosotros" , component: NosotrosComponent, title: "Nosotros"},
+{path: "contacto" , component: ContactoComponent, title: "Contacto"},
+{path: "registrarse" , component: RegistrarseComponent, title: "Registrarse"},
+{path: "iniciarSesion" , component: IniciarSesionComponent, title: "Iniciar Sesion"},
+{path: "privado" , component: PrivadoComponent, title: "Privado"},
+{path: "navegacion" , component: NavegacionComponent, title: "Navegación"},
+{path: "header" , component: HeaderComponent, title: ""},
+{path: "footer" , component: FooterComponent, title: ""},
+{path: "**" , component: NoEncontradoComponent, title: "404"},
+
 
 ];
