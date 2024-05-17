@@ -7,9 +7,6 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
 import { IniciarSesionComponent }  from './components/iniciar-sesion/iniciar-sesion.component';
 import { PrivadoComponent } from './components/privado/privado.component';
-import { NavegacionComponent } from './components/navegacion/navegacion.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { NoEncontradoComponent } from './components/no-encontrado/no-encontrado.component';
 
 
@@ -24,9 +21,6 @@ export const routes: Routes = [
 {path: "registrarse" , component: RegistrarseComponent, title: "Registrarse"},
 {path: "iniciarSesion" , component: IniciarSesionComponent, title: "Iniciar Sesion"},
 {path: "privado" , component: PrivadoComponent, title: "Privado"},
-{path: "navegacion" , component: NavegacionComponent, title: "Navegación"},
-{path: "header" , component: HeaderComponent, title: ""},
-{path: "footer" , component: FooterComponent, title: ""},
 {path: "**" , component: NoEncontradoComponent, title: "404"},
 
 
