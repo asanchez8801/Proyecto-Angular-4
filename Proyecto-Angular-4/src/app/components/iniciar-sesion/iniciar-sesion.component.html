@@ -1,1 +1,15 @@
 <p>iniciar-sesion works!</p>
+<section>
+  <div>
+    <h3>Inicie su sesión aquí</h3>
+    <form [formGroup]="formularioCredenciales" (ngSubmit)="manejarEnvio()">
+      <input type="text" placeholder="usuario" formControlName="user" />
+      <input
+        type="password"
+        placeholder="contraseña"
+        formControlName="password"
+      />
+      <button>Iniciar sesión</button>
+    </form>
+  </div>
+</section>
